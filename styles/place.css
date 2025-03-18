@@ -1,0 +1,123 @@
+:root{
+    --primary-color: #006B3F;
+    --secondary-color: #FCD116;
+    --accent-color: #CE1126;
+    --text-color: black;
+    --background-color: #f5f5f5;
+    --weather-icon-size: 60px;
+    --font-family: "Montserrat" , sans-serif;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0%;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+header{
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1{
+    font-size: 2em;
+    margin: 0;
+}
+
+.hero{
+    text-align: center;
+    margin: 0;
+    border-top: 4px solid var(--secondary-color);
+    border-bottom:2px solid var(--primary-color) ;
+}
+
+
+.hero img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.weather{
+    text-align: center;
+}
+
+.weather h1{
+    font-size: 1.3em;
+    color: var(--text-color);
+    font-variant: small-caps;
+    margin-bottom: 1rem;
+}
+
+.weather-icon {
+    display: block;
+    width: var(--weather-icon-size);
+    height: var(--weather-icon-size);
+    background: url('../images/weather_day_sand.svg') no-repeat center;
+    background-size: contain;
+    margin: 0 auto; 
+}
+
+.weather p{
+    font-size: medium;
+    font-weight: 200;
+}
+
+em{
+    font-weight: 500;
+}
+
+.hr{
+   margin-top: 25px;
+   color: gainsboro;
+}
+
+.country-data{
+    text-align: center;
+    margin-top: 10px;
+}
+.country-data h1{
+    text-align: center;
+}
+
+.country-data ul ,.weather ul{
+    list-style: none;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: yellow;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#currentyear{
+    color: yellow;
+}
+
+.last-modified {
+    color: #ffd700;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}

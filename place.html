@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 – Dynamic Web Fundamentals - Benjamin Asante </title>
+        <meta name="description" content="Page purpose - To show the WDD 131  Dynamic Web Fundamentals.">
+        <meta name="author" content="Benjamin Asante"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <script src="scripts/place.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+    </head>
+<body>
+   <div class="container">
+    <header>
+        <h1>Ghana</h1>
+    </header>
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+            <source srcset="images/hero-small.webp" media="(max-width: 767px)">
+            <img src="images/hero-small.webp" alt="Beautiful view of Ghana">
+        </picture>
+    </section>
+   </div>
+
+    <main>
+        <section class="country-data">
+            <h2>Country Information</h2>
+            <ul>
+                <li><em>Area:  </em> 238,535 sq km</li>
+                <li><em>Population:  </em> 31,732,129</li>
+                <li><em>Capital:  </em> Accra</li>
+                <li><em>Languages:  </em> English (official), Twi, Ewe, Ga</li>
+                <li><em>Currency:  </em> Ghanaian Cedi (GHS)</li>
+                <li><em>Time Zone:  </em> GMT (UTC+0)</li>
+                <li><em>Calling Code:  </em> +233</li>
+                <li><em>Internet TLD:  </em> .gh</li>
+            </ul>
+        </section>
+
+        <hr class="hr">
+        <br class="br">
+        <section class="weather">
+            <h2>Weather
+                <span class="weather-icon" aria-label="Partly Cloudy Weather"></span>
+            </h2>
+            <ul>
+                <li><em>Temperature: </em> <span id="temperature">28 °C</span></li>
+                <li><em>Conditions: </em> Partly Cloudy</li>
+                <li><em>Wind Speed: </em> <span id="wind-speed">12 km/h</span></li>
+                <li><em>Wind Chill: </em> <span id="wind-chill">27.5°C</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🌺 Benjamin Asante Accra 🌺 Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
