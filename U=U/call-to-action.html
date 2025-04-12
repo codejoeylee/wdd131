@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigshot+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/go.css">
+    <link rel="stylesheet" href="styles/go-mobile.css">
+    <title>U=U Call TO Action</title>
+</head>
+<body>
+    <header class="page-2">
+        <nav>
+            <a href="index.html">
+                <div class="logo">U=U</div>
+            </a>
+               
+            <div>
+                <a href="education-resource.html"  class="menu-btn" id="education-btn">EDUCATION & RESOURSE</a>
+                <a href="call-to-action.html"  class="menu-btn" id="call-to-action-btn">CALL TO ACTION</a>
+            </div>
+        </nav>
+        <div class="hero-description">
+            <h1 class="text1">Call TO Action</h1> 
+            <p class="text2">Take the next step with our resources.<br> Make an impact today.</p>    
+        </div>
+    </header>
+    <main>
+        <div class="call-page">
+            <h1>Call to Action</h1>
+    
+            <!-- Spread the Message Section -->
+            <div class="section ">
+                <h2>Spread the Message</h2>
+                <p>Help amplify the U=U message! Share impactful information on social media using the hashtags:</p>
+                <p class="hashtags">
+                    <a href="https://www.instagram.com/explore/tags/UequalsU/" target="_blank" rel="noopener noreferrer" onclick="trackHashtag('#UequalsU')">#UequalsU</a> 
+                    <a href="https://www.instagram.com/explore/tags/EndHIVStigma/" target="_blank" rel="noopener noreferrer" onclick="trackHashtag('#EndHIVStigma')">#EndHIVStigma</a> 
+                    <a href="https://www.instagram.com/explore/tags/StopHIV/" target="_blank" rel="noopener noreferrer" onclick="trackHashtag('#StopHIV')">#StopHIV</a> 
+                    <a href="https://www.instagram.com/explore/tags/HIVAwareness/" target="_blank" rel="noopener noreferrer" onclick="trackHashtag('#HIVAwareness')">#HIVAwareness</a> 
+                    <a href="https://www.instagram.com/explore/tags/ZeroHIVStigma/" target="_blank" rel="noopener noreferrer" onclick="trackHashtag('#ZeroHIVStigma')">#ZeroHIVStigma</a>
+                    <a href="https://www.instagram.com/explore/tags/HIVSupport/" target="_blank" rel="noopener noreferrer" onclick="trackHashtag('#HIVSupport')">#HIVSupport</a>
+                    <a href="https://www.instagram.com/explore/tags/HIVPrevention/" target="_blank" rel="noopener noreferrer" onclick="trackHashtag('#HIVPrevention')">#HIVPrevention</a>
+                </p>
+                <div id="lastClickedDisplay" style="margin-top: 10px; font-style: italic; color: red; border:pink"></div>
+                
+            </div>
+    
+            <!-- Get Involved Section -->
+            <div class="section">
+                <h2>Get Involved</h2>
+                <p>Here are ways you can contribute:</p>
+                <ul>
+                    <li>Donate to HIV awareness campaigns.</li>
+                    <li>Volunteer with local HIV-focused organizations.</li>
+                    <li>Participate in advocacy programs to fight stigma and spread awareness.</li>
+                </ul>
+            </div>
+    
+            <!-- Inspiring Testimonials Section -->
+            <div class="section">
+                <h2>Inspiring Testimonials</h2>
+                <p>Read heartfelt stories from individuals living with HIV who have achieved undetectable status. These testimonials highlight empowerment, hope, and resilience:</p>
+                <blockquote>
+                    "Being undetectable gave me the confidence to live life fully. U=U is not just a scientific fact, it's freedom."
+                </blockquote>
+                <blockquote>
+                    "U=U proves that we are not defined by HIV. It has transformed how I view myself and what I can achieve."
+                </blockquote>
+            </div>
+    
+            <!-- Contact Information Section -->
+            <div class="section">
+                <h2>Contact Information</h2>
+                <p>Reach out to organizations and support networks:</p>
+                <ul>
+                    <li>Email: support@hivawareness.org</li>
+                    <li>Phone: +1 800-123-4567</li>
+                    <li>Useful Links:</li>
+                </ul>
+                <ul class="contact--ul">
+                    <li><a href="https://www.aids.gov">AIDS.gov</a></li>
+                    <li><a href="https://www.hiv.gov">HIV.gov</a></li>
+                </ul>
+            </div>
+            <div class="form-section">
+                <h2>Contact or Involvement Form</h2>
+                <p>Ask questions, request resources, share stories, or express interest in supporting the U=U cause.</p>
+                <form class="contact-form" method="get">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email address" required>
+    
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject">
+                        <option value="" disabled selected>Choose a Product ...</option>
+                        <option value="learn-more">Learn More About U=U</option>
+                        <option value="request-resources">Request Resources</option>
+                        <option value="share-story">Share My Story</option>
+                        <option value="volunteer-donate">Volunteer/Donate</option>
+                    </select>
+    
+                    <label for="message">Message/Comments:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+    
+                    <label>
+                        <input type="checkbox" name="opt-in-updates">
+                        I would like to receive updates about U=U.
+                    </label>
+                    <label>
+                        <input type="checkbox" name="opt-in-volunteer">
+                        I’m interested in volunteering or donating.
+                    </label>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="go-to">
+            <p class="go-to-text">Learn more about U=U </p>
+            <span class="btn"> <span class="arrow"> → </span> More</span>
+        </div>
+        
+        <hr class="styled-hr">
+        <div class="logo1"> U=U </div>
+        <div class="footer-content">
+            <div class="footer-item-1">
+                <h1>Links</h1>
+                <p><a href="education-resource.html" class="link">EDUCATION & RESOURSE</a></p>
+                <p><a href="call-to-action.html" class="link">CALL TO ACTION</a></p>
+            </div>
+            <div class="footer-item-2">
+                <h1>Contact Us</h1>
+                <p class="ft-text">Phone : +233 509955018</p>
+                <p class="ft-text">Email : Benjaminoforiasante@gmail.com</p>
+            </div>
+            <div class="footer-item-3">
+                <h1>Socials</h1>
+                <a href="https://www.instagram.com" target="_blank" class="link1">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.x.com" class="link1">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com" class="link1">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copyrigth">
+            <p>Copyright © 2023 U=U. All rights reserved.</p>
+        </div>
+    </footer>
+</main>
+<script src="go.js"></script>
+</body>
+</html>

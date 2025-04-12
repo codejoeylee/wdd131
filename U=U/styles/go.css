@@ -1,0 +1,885 @@
+body {
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #000000;
+    margin: 0;
+}
+
+header {
+    min-height: 100vh;
+    position: relative;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.8), rgba(255, 255, 255, 0.7));
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #000;
+    border: 0px solid #000;
+}
+
+
+.logo {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    font-weight: 300;
+    font-size: medium;
+    cursor: pointer;
+    color: #fff;
+    margin: 5px;
+}
+
+.container {
+    padding: 2rem;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -25px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.main-title {
+    font-size: 6.5vw;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+}
+
+.subtitle {
+    margin-top: 1rem;
+}
+
+.subtitle p {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+    color: #000;
+}
+
+.main-title {
+    opacity: 0;
+}
+
+.subtitle {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.consultation-btn {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.circle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.circle-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.details-container {
+    margin-top: 30px;
+    border: 0px solid #ccc;
+    border-left: 3px solid red;
+    border-right: #000;
+    overflow: hidden;
+    width: 70vw;
+    justify-content: center;
+}
+
+.details-header {
+    background-color: black;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    font-size: 3vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.down {
+    padding: 5px;
+    color: gray;
+}
+
+.down:hover {
+    color: white;
+}
+
+.down:hover {
+    color: white;
+}
+
+.details-content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    color: #fff;
+    font-size: large;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    text-decoration: solid;
+}
+
+.em {
+    color: lightgreen;
+    font-size: x-large;
+    font-display: bold;
+    font-family: "Bigshot One", sans-serif;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-col {
+    display: block;
+    margin-top: 30px;
+    padding: 5vw;
+    justify-content: center;
+}
+
+.vrt-container {
+    color: #ccc;
+    position: absolute;
+    top: 1075px;
+    left: -130px;
+    padding: 3vw;
+    display: inline-block;
+    transform: rotate(-90deg);
+    font-size: x-large;
+    color: red;
+    font-size: 4vw;
+    font-family: "Bigshot One", sans-serif;
+}
+
+
+
+
+.encourage {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 5px;
+    margin: 30px 10px;
+    opacity: 1;
+    height: 310px;
+}
+
+.encourage {
+    background-color: whitesmoke;
+    border-color: #000;
+}
+
+.encourage>h1 {
+    font-family: "BigShot One", sans-serif;
+    background-color: black;
+    border: 1px solid whitesmoke;
+    border-radius: 30px;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.encourage>p {
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: xx-larger;
+    font-weight: 400;
+    padding: 15px;
+    line-height: 30px;
+    color: #000;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background-color: #ffdddd;
+    border-top: 6px solid #f44336;
+}
+
+.info-container {
+    background-image: url("../images/vector.webp");
+    margin-top: 70px;
+    width: 70vw;
+    height: 25vw;
+    margin: auto;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.info {
+    width: 50vw;
+    height: 20vw;
+    margin: auto;
+    padding: 40px;
+}
+
+.info h1 {
+    font-size: 3vw;
+    font-family: "Bigshot One", sans-serif;
+}
+
+.emp {
+    color: red;
+    font-size: x-large;
+    font-display: bold;
+    font-family: "Bigshot One", sans-serif;
+}
+
+.p {
+    font-size: large;
+    font-style: italic;
+    color: #000;
+}
+
+.styled-hr {
+    border: 0;
+    height: 0.5px;
+    background: linear-gradient(to right, gray, white);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+/*page-2-css*/
+.hero-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 150px 10px 0 0;
+    font-size: large;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+}
+
+.hero-description>p {
+    color: red;
+    font-weight: 400;
+}
+
+.page-2 {
+    border: 1px solid;
+    min-height: 50px;
+    position: relative;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.8), rgba(255, 255, 255, 0.7));
+    overflow: hidden;
+}
+
+.text1 {
+    font-size: xx-large;
+    font-style: bold;
+    margin-left: 10px;
+}
+
+.text2 {
+    margin-right: 10px;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-areas: 'mypic mytext mypic2'
+        'mypic myArea mypic2'
+        'mypic myArea mypic2';
+    grid-template-columns: 300px 600px 300px;
+    grid-template-rows: 200px 100px 100px;
+    gap: 10px;
+    width: 1200px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.item1 {
+    grid-area: mypic;
+}
+
+.item2 {
+    grid-area: mytext;
+}
+
+.item3 {
+    grid-area: myArea;
+}
+
+.item4 {
+    grid-area: mypic2;
+}
+
+.grid-1>div {
+    background-color: black;
+    text-align: center;
+    border: 3px solid red;
+}
+
+.mypic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pic {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+}
+
+.pic1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-text {
+    border-top: 3px solid red;
+    padding: 2px;
+    color: white;
+    font-size: x-large;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+.item2>h1,
+p {
+    color: white;
+    font-size: medium;
+    font-family: "Inter", sans-serif;
+    text-align: justify;
+    padding: 5px;
+}
+
+.item2>p {
+    border-bottom: 3px solid red;
+}
+
+.item2>h1 {
+    padding-left: 40px;
+    color: white;
+    font-size: x-large;
+    font-family: "Inter", sans-serif;
+    margin-top: -8px;
+    margin-left: 220px;
+}
+
+
+
+.item2>button {
+    margin-top: -10px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.item2>button>span {
+    margin-left: 100px;
+    width: 20px;
+    height: 20px;
+}
+
+.item3>p {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-size: large;
+}
+
+
+
+/*page-3-css*/
+.call-page {
+    padding: 20px;
+}
+
+.call-page h2 {
+    color: red;
+}
+
+.call-page h1 {
+    text-align: center;
+    color: red;
+    font-family: "Bigshot One", sans-serif;
+}
+
+.call-page ul {
+    margin-left: -25px;
+}
+
+.call-page .section,
+.form-section {
+    margin-bottom: 20px;
+    background: black;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.call-page .section {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.call-page blockquote {
+    font-family: "Inter", sans-serif;
+    font-size: medium;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.call-page .section p {
+    text-align: center;
+    font-size: larger;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+.call-page .contact--ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -35px;
+    font-family: "Bigshot One", sans-serif;
+}
+
+.call-page .contact--ul li {
+    margin: 10px;
+    padding: 0 20px;
+    list-style-type: none;
+    border-left: 2px solid tomato;
+    background-color: cadetblue;
+    font-size: large;
+}
+
+.call-page p,
+.call-page li {
+    color: white;
+    line-height: 1.6;
+    list-style-type: none;
+    font-family: "Bigshot One", sans-serif;
+}
+
+.call-page a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.call-page a:hover {
+    text-decoration: underline;
+}
+
+.call-page .hashtags {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.call-page .form-section {
+    margin: 0 20px;
+    background: linear-gradient(45deg, rgba(255, 0, 0, 0.8), rgba(255, 255, 255, 0.7));
+}
+
+.call-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.call-page .form-section h2 {
+    color: black;
+    font-family: "Bigshot One", sans-serif;
+    font-size: x-large;
+    margin-left: 20px;
+}
+
+.call-page .form-section p {
+    font-family: "Inter", sans-serif;
+    color: rgb(225, 180, 172);
+    font-weight: 700;
+    font-size: large;
+    margin-left: 20px;
+}
+
+.call-page .form-section select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px 10px;
+    padding-right: 30px;
+    width: 95%;
+    margin-left: 15px;
+}
+
+.call-page label {
+    font-weight: 400;
+    color: black;
+    margin-left: 20px;
+}
+
+.call-page input[type="text"],
+textarea,
+select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: auto;
+    margin-right: 30px;
+}
+
+
+
+.call-page input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.call-page button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Bigshot One", sans-serif;
+    font-size: large;
+}
+
+.call-page button:hover {
+    background-color: tomato;
+}
+
+
+
+
+
+
+footer {
+    background-color: black;
+    border-top: gray 1px solid;
+    margin-top: 70px;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.footer-item-1,
+.footer-item-2,
+.footer-item-3 {
+    border-top: 0.5px solid whitesmoke;
+    padding: 10px;
+    color: red;
+    font-size: medium;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-item-1,
+.footer-item-2,
+.footer-item-3 {
+    color: gray;
+    font-size: small;
+}
+
+.footer-item-1,
+.footer-item-2,
+.footer-item-3>p {
+    color: gray;
+    font-size: small;
+    text-align: center;
+}
+
+.footer-item-1>p {
+    text-align: center;
+}
+
+.link:hover {
+    color: white;
+}
+
+.link.active {
+    color: yellow;
+}
+
+.copyrigth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.5px solid whitesmoke;
+    font-size: medium;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: gray;
+    margin: 0;
+}
+
+.ft-text {
+    color: gray;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+.go-to {
+    display: block;
+    margin: 5px;
+    color: white;
+    margin: 10px;
+    margin-left: 41px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    font-family: "Inter", sans-serif;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.go-to-text {
+    color: white;
+    font-size: x-large;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-style: bold;
+}
+
+.arrow {
+    font-size: medium;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.logo1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-left: 50px;
+}
+
+i {
+    color: gray;
+    width: 90px;
+    height: 50px;
+}
+
+.footer-content .link1 {
+    font-size: xx-large;
+}
+
+i:hover {
+    color: white;
+}
+
+
+
+
+
+/*page-2-css*/
+
+.study-card>h3 {
+    color: red;
+}
+
+.number {
+    font-size: xx-large;
+    color: red;
+}
+
+.number:hover {
+    color: blueviolet;
+}
+
+.stat-highlight>p {
+    color: white;
+    font-size: medium;
+    font-family: "Inter", sans-serif;
+    text-align: start;
+    font-size: large;
+}
+
+.faq-section,
+.evidence {
+    display: block;
+    margin: 5px;
+    color: white;
+    margin: 10px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.evidence>h1 {
+    color: red;
+    font-size: xx-large;
+    font-family: "Inter", sans-serif;
+    text-align: start;
+    padding: 10px;
+    border-bottom: 2px solid #f44336;
+}
+
+.evidence-text>p {
+    text-align: start;
+    font-size: large;
+    color: white;
+    font-style: bold;
+    line-height: 2em;
+}
+
+.resource-category a,
+.Scientific-evidence a {
+    color: slateblue;
+    text-decoration: none;
+}
+
+
+.evd-title {
+    color: red;
+}
+
+.faq-section>h2 {
+    color: red;
+    font-size: xx-large;
+    font-family: "Inter", sans-serif;
+    text-align: start;
+    margin: 0;
+    padding: 20px;
+}
+
+.faq-container {
+    margin-left: 30px;
+}
+
+.faq-container summary {
+    color: white;
+    font-size: large;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+}
+
+.faq-container summary:hover {
+    color: tomato;
+}
+
+.faq-container p {
+    text-align: start;
+    font-size: large;
+    margin-left: 25px;
+}
+
+.resources-section>h2 {
+    color: red;
+    font-size: xx-large;
+    font-family: "Inter", sans-serif;
+    text-align: start;
+    margin: 0;
+    padding: 20px;
+    margin-left: 18.5rem;
+}
+
+.resource-categories {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.resource-category {
+    padding: 0.5rem;
+    height: 200px;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.resource-category ul {
+    list-style-type: none;
+    text-align: start;
+}
+
+.resource-category h3 {
+    color: white;
+    text-align: center;
+}
